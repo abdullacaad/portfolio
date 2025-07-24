@@ -163,73 +163,88 @@
 
        
 
-       <!-- -------------- PROJECT BOX ---------------- -->
+      <!-- -------------- PROJECT BOX ---------------- -->
 <section id="projects" style="padding: 60px 20px; background: #f8f9fa;">
   <div style="text-align: center; margin-bottom: 40px;">
-    <h1 style="font-size: 2.5rem; color: #007bff;">⚙️ Embedded Projects</h1>
-    <p style="font-size: 1.1rem; color: #444;">Here are some of the hardware-based systems I’ve developed or contributed to:</p>
+    <h1 style="font-size: 2.5rem; color: #007bff;">⚙️ Embedded & Software Projects</h1>
+    <p style="font-size: 1.1rem; color: #444;">A showcase of the embedded systems and software applications I've developed or contributed to:</p>
   </div>
 
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1200px; margin: auto;">
-    
+
     <!-- Project 1 -->
     <div style="background: white; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
-      <img src="images/greenhouse-automation.png" alt="Greenhouse Automation" style="width: 100%; border-radius: 8px;">
-      <h3 style="margin-top: 15px;">🌱 Greenhouse Automation</h3>
-      <p>A smart ATmega32-based system using DHT11, LDR, and soil sensors to control fan, water pump, and lights automatically.</p>
+      <img src="images/scholarship-management.png" alt="Scholarship Management System" style="width: 100%; border-radius: 8px;">
+      <h3 style="margin-top: 15px;">🎓 GUI-Based Scholarship Management System</h3>
+      <p>Desktop software for managing student scholarship applications with automated shortlisting and real-time application tracking.</p>
       <ul>
-        <li>Auto temperature & humidity control</li>
-        <li>Water pump with moisture sensor</li>
-        <li>LCD display & manual override</li>
+        <li>Student registration and login portal</li>
+        <li>Admin dashboard with approval tools</li>
+        <li>Eligibility check based on GPA/criteria</li>
       </ul>
-      <p><strong>Tech Used:</strong> ATmega32, C, Proteus, LM35, LCD</p>
+      <p><strong>Tech Used:</strong> Java, Swing/JavaFX, MySQL</p>
       <a href="#" target="_blank">🔗 GitHub Repo</a>
     </div>
 
     <!-- Project 2 -->
     <div style="background: white; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
-      <img src="images/line-following-robot.png" alt="Line Following Robot" style="width: 100%; border-radius: 8px;">
-      <h3 style="margin-top: 15px;">🤖 Line Following Robot</h3>
-      <p>Robot using IR sensors and L298N motor driver to follow a black line with basic PID control for accurate turning.</p>
+      <img src="images/student-management.png" alt="School Management System" style="width: 100%; border-radius: 8px;">
+      <h3 style="margin-top: 15px;">🏫 Console-Based School Management System</h3>
+      <p>A command-line C++ application to manage school records using file handling and OOP — with plans to upgrade to GUI.</p>
       <ul>
-        <li> 3-sensor IR array</li>
-        <li> Motor control via Arduino</li>
-        <li> Optimized for curves and junctions</li>
+        <li>Student record management (Add/Edit/Delete)</li>
+        <li>Sorting & searching using custom algorithms</li>
+        <li>Persistent storage using text files</li>
       </ul>
-      <p><strong>Tech Used:</strong> Arduino, IR Sensors, L298N, C++</p>
+      <p><strong>Tech Used:</strong> C++, File I/O, OOP</p>
       <a href="#" target="_blank">🔗 GitHub Repo</a>
     </div>
 
     <!-- Project 3 -->
     <div style="background: white; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
-      <img src="images/smart-irrigation.png" alt="Smart Irrigation" style="width: 100%; border-radius: 8px;">
-      <h3 style="margin-top: 15px;">💧 Smart Irrigation System</h3>
-      <p>Moisture-sensor-based irrigation control system using ATmega32, Proteus simulation, and LCD interface.</p>
+      <img src="images/gesture-car.png" alt="Gesture Controlled Car" style="width: 100%; border-radius: 8px;">
+      <h3 style="margin-top: 15px;">🚗 Arduino-Based Hand Gesture Controlled Car</h3>
+      <p>Gesture-driven wireless car using an accelerometer and RF modules — developed for Microprocessor & Interfacing final project.</p>
       <ul>
-        <li>Soil moisture auto-pump logic</li>
-        <li>Relay-based pump trigger</li>
-        <li>Simulated with sensors</li>
+        <li>Hand motion detection using ADXL345</li>
+        <li>Wireless RF transmission using nRF24L01</li>
+        <li>Motor control with Arduino UNO and L298N</li>
       </ul>
-      <p><strong>Tech Used:</strong> ATmega32, C, Proteus, LCD</p>
+      <p><strong>Tech Used:</strong> Arduino UNO, Embedded C, ADXL345, nRF24L01</p>
       <a href="#" target="_blank">🔗 GitHub Repo</a>
     </div>
 
     <!-- Project 4 -->
     <div style="background: white; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
-      <img src="images/iot-temp-logger.png" alt="IoT Temperature Logger" style="width: 100%; border-radius: 8px;">
-      <h3 style="margin-top: 15px;">🌡️ IoT Temperature Logger</h3>
-      <p>ESP32-based system that reads temperature and humidity via DHT11 and logs it to cloud dashboard in real-time.</p>
+      <img src="images/binary-counter.png" alt="4-bit Binary Counter" style="width: 100%; border-radius: 8px;">
+      <h3 style="margin-top: 15px;">🔢 4-Bit Binary Counter Using D Flip-Flops</h3>
+      <p>A digital circuit simulated in Logisim that counts from 0–15 using clock-driven D flip-flops, suitable for logic design practice.</p>
       <ul>
-        <li>ESP32 with Wi-Fi data upload</li>
-        <li>DHT11 sensor integration</li>
-        <li>Cloud display (Firebase / Thingspeak)</li>
+        <li>Edge-triggered flip-flop arrangement</li>
+        <li>Synchronous counting from 0000 to 1111</li>
+        <li>Reset and enable logic included</li>
       </ul>
-      <p><strong>Tech Used:</strong> ESP32, DHT11, Arduino IDE, HTML/CSS</p>
-      <a href="#" target="_blank">🔗 GitHub Repo</a>
-      <a href="#" target="_blank">🌐 Live Demo</a>
+      <p><strong>Tech Used:</strong> Logisim, Digital Logic, Flip-Flops</p>
+      <a href="#" target="_blank">🔗 Circuit File</a>
+    </div>
+
+    <!-- Project 5 -->
+    <div style="background: white; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+      <img src="images/analog-multimeter.png" alt="Analog Multimeter" style="width: 100%; border-radius: 8px;">
+      <h3 style="margin-top: 15px;">🧪 Analog Multimeter Circuit</h3>
+      <p>Custom-built analog multimeter circuit using an ammeter and passive components to measure voltage and current ranges.</p>
+      <ul>
+        <li>Multiple measurement ranges (DCV, DCA)</li>
+        <li>Shunt resistor and series resistance calculation</li>
+        <li>Calibrated manually using test voltage source</li>
+      </ul>
+      <p><strong>Tech Used:</strong> Analog Circuit Design, Ammeter, Passive Components</p>
+      <a href="#" target="_blank">🔗 Circuit Diagram</a>
     </div>
 
   </div>
+</section>
+
 
   <!-- Call to Action -->
   <div style="text-align: center; margin-top: 40px;">
