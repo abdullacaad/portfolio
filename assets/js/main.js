@@ -114,3 +114,11 @@ window.addEventListener('scroll', scrollActive);
 document.querySelectorAll('.project-card').forEach(card => {
   card.setAttribute('title', 'Click to know more about this embedded project');
 });
+<script>
+  const contactForm = document.getElementById("contactForm");
+
+  contactForm.addEventListener("submit", function (e) {
+    // Show message sent alert before actual form submission
+    alert("✅ Message sent successfully!");
+  });
+</script>
