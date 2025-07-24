@@ -34,7 +34,6 @@ function headerShadow() {
 /* ----- TYPING EFFECT ----- */
 var typingEffect = new Typed(".typedText", {
   strings: ["Embedded Systems Developer", "Smart Hardware Innovator", "UI-Integrated Engineer"],
-
   loop: true,
   typeSpeed: 100,
   backSpeed: 80,
@@ -60,7 +59,7 @@ sr.reveal('.featured-image', { delay: 300 });
 /* HEADINGS */
 sr.reveal('.top-header', {});
 
-/* PROJECT CARDS (Updated from .project-box to .project-card) */
+/* PROJECT CARDS */
 sr.reveal('.project-card', {
   interval: 200,
   origin: 'bottom',
@@ -74,7 +73,6 @@ const srLeft = ScrollReveal({
   duration: 2000,
   reset: true
 });
-
 srLeft.reveal('.about-info', { delay: 100 });
 srLeft.reveal('.contact-info', { delay: 100 });
 
@@ -85,7 +83,6 @@ const srRight = ScrollReveal({
   duration: 2000,
   reset: true
 });
-
 srRight.reveal('.skills-box', { delay: 100 });
 srRight.reveal('.form-control', { delay: 100 });
 
@@ -107,18 +104,36 @@ function scrollActive() {
     }
   });
 }
-
 window.addEventListener('scroll', scrollActive);
 
-/* Add tooltip to project cards */
+/* TOOLTIP FOR PROJECT CARDS */
 document.querySelectorAll('.project-card').forEach(card => {
   card.setAttribute('title', 'Click to know more about this embedded project');
 });
-<script>
-  const contactForm = document.getElementById("contactForm");
 
-  contactForm.addEventListener("submit", function (e) {
-    // Show message sent alert before actual form submission
-    alert("✅ Message sent successfully!");
-  });
-</script>
+/* ----- CONTACT FORM SUBMISSION (AJAX) ----- */
+const contactForm = document.getElementById("contactForm");
+
+contactForm.addEventListener("submit", function (e) {
+  e.preventDefault(); // Stop normal form behavior
+
+  const formData = new FormData(contactForm);
+
+  fetch("https://formsubmit.co/ajax/mabdullahsaadofficial@gmail.com", {
+    method: "POST",
+    body: formData
+  })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success === "true") {
+        alert("✅ Message sent successfully!");
+        contactForm.reset();
+      } else {
+        alert("❌ Failed to send. Please try again.");
+      }
+    })
+    .catch(error => {
+      alert("❌ Network error. Please check your internet.");
+      console.error("Form Error:", error);
+    });
+});
