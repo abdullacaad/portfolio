@@ -2,368 +2,975 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+    <meta name="description" content="Abdullah Saad - Embedded Systems Developer & Frontend Developer Portfolio">
+    <title>Portfolio | Abdullah Saad</title>
 
-    <!-- --------- UNICONS ---------- -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- --------- CSS ---------- -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- --------- FAVICON ---------- -->
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="assets/images/favicon1.png" type="image/x-icon">
-
-    <title>Portfolio | Abdullah Saad</title>
 </head>
 <body>
-   <div class="container">
-    <!-- --------------- HEADER --------------- -->
-      <nav id="header">
-        <div class="nav-logo">
-            <p class="nav-name">MAS</p>
-            <span>.</span>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="#home">MAS</a>
+                </div>
+
+                <!-- Hamburger Menu -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- Navigation Links -->
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="nav-link active">Home</a></li>   
+                    <li><a href="#about" class="nav-link">About</a></li>        
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#freelancing" class="nav-link">Services</a></li>
+                    <li><a href="#thesis" class="nav-link">Academic</a></li>  
+                    <li><a href="#contact" class="nav-link">Contact</a></li>    
+                </ul>
+
+                <!-- Dark Mode Toggle -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
         </div>
-        <div class="nav-menu" id="myNavMenu">
-            <ul class="nav_menu_list">
-                <li class="nav_list">
-                    <a href="#home" class="nav-link active-link">Home</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#about" class="nav-link">About</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#projects" class="nav-link">Projects</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#contact" class="nav-link">Contact</a>
-                    <div class="circle"></div>
-                </li>
-            </ul>
-        </div>
-        <div class="nav-button">
-            <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
-        </div>
-        <div class="nav-menu-btn">
-            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
-        </div>
-      </nav>
+    </nav>
 
-
-    <!-- -------------- MAIN ---------------- -->
-    <main class="wrapper">
-       <!-- -------------- FEATURED BOX ---------------- -->
-       <section class="featured-box" id="home">
-          <div class="featured-text">
-            <div class="featured-text-card">
-                <span>Abdullah Saad</span>
-            </div>
-            <div class="featured-name">
-                <p>I'm <span class="typedText"></span></p>
-            </div>
-            <div class="featured-text-info">
-                <p>Blending the worlds of embedded logic and modern UI, I design intuitive, smart systems that look great and work even better.
-                </p>
-            </div>
-            <div class="featured-text-btn">
-                <button class="btn blue-btn">Hire Me</button>
-                
-<a href="CV.pdf" download class="btn download-cv-btn">
-  Download CV <i class="uil uil-file-download"></i>
-</a>
-
-
-            </div>
-            <div class="social_icons">
-                <a href="https://instagram.com/abdullacaad" target="_blank" class="icon">
-    <i class="uil uil-instagram"></i>
-  </a>
-  <a href="https://linkedin.com/in/abdullacaad" target="_blank" class="icon">
-    <i class="uil uil-linkedin-alt"></i>
-  </a>
-  <a href="https://dribbble.com/yourprofile" target="_blank" class="icon">
-    <i class="uil uil-dribbble"></i>
-  </a>
-  <a href="https://github.com/abdullacaad" target="_blank" class="icon">
-    <i class="uil uil-github-alt"></i>
-  </a>
-            </div>
-          </div>
-          <div class="featured-image">
-            <div class="image">
-                <img src="assets/images/avatar.png" alt="avatar">
-            </div>
-          </div>
-          <div class="scroll-icon-box">
-            <a href="#about" class="scroll-btn">
-                <i class="uil uil-mouse-alt"></i>
-                <p>Scroll Down</p>
-            </a>
-          </div>
-
-       </section>
-       <!-- -------------- ABOUT BOX ---------------- -->
-       <section class="section" id="about">
-          <div class="top-header">
-            <h1>About Me</h1>
-          </div>
-          <div class="row">
-            <div class="col">
-                <div class="about-info">
-                    <h3>My introduction</h3>
-<p>
-  I’m Abdullah Saad — an Embedded Systems enthusiast and Frontend Developer who turns hardware into sleek, interactive experiences. From gesture-controlled cars to admin dashboards, I merge logic with design.
-</p>
-
-<ul>
-  <li><strong>Embedded:</strong> Arduino, ATmega32, Embedded C, Sensors, RF Modules</li>
-  <li><strong>Frontend:</strong> HTML, CSS, JS, Flutter, WordPress</li>
-  <li><strong>Software:</strong> Java, C++, MySQL, OOP</li>
-  <li><strong>Hardware:</strong> Digital & Analog Circuits, Flip-Flops</li>
-  <li><strong>Tools:</strong> Git, VS Code, Proteus, Logisim</li>
-</ul>
-
-<p>
-  I build real-world tech—smart, efficient, and beautifully designed.
-</p>
-
-
+    <!-- Featured/Home Section -->
+    <section id="home" class="featured-section">
+        <div class="container">
+            <div class="featured-content">
+                <div class="featured-text reveal-left">
+                    <span class="badge-tag">Abdullah Saad</span>
+                    <h1>I'm <span class="typed-text"></span><span class="cursor">&nbsp;</span></h1>
+                    <p class="featured-description">
+                        Empowering projects through freelancing expertise and AI-assisted development. I deliver smart, efficient solutions that combine cutting-edge technology with professional quality.
                     </p>
-                    <div class="about-btn">
-                        <button class="btn">Download CV <i class="uil uil-import"></i></button>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn btn-primary">Get in touch</a>
+                        <a href="CV.pdf" download class="btn btn-secondary">Download CV</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://instagram.com/abdullacaad" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/abdullacaad" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/abdullacaad" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://facebook.com/abdullacaad" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <div class="featured-image reveal-right">
+                    <div class="image-wrapper floating">
+                        <img src="assets/images/avatar.png" alt="Abdullah Saad">
                     </div>
                 </div>
             </div>
-          <div class="col">
-    <div class="skills-box">
-        <div class="skills-header">
-            <h3>Software</h3>
         </div>
-        <div class="skills-list">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Flutter</span>
-            <span>Bubble.io</span>
-            <span>C</span>
-        </div>
-    </div>
+    </section>
 
-    <div class="skills-box">
-        <div class="skills-header">
-            <h3>Embedded</h3>
-        </div>
-        <div class="skills-list">
-            <span>Hardware Design</span>
-             <span>Arduino</span>
-            <span>Digital Logic Design</span>
-            <span>Electronic Devices & Circuits</span>
-            <span>Embedded Systems</span>
-             <span>Microprocessor & Interfacing </span>
-        </div>
-    </div>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header reveal-fade">
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
 
-    <div class="skills-box">
-        <div class="skills-header">
-            <h3>Tools</h3>
-        </div>
-        <div class="skills-list">
-            <span>Git</span>
-            <span>WordPress</span>
-            <span>VS Code</span>
-            <span>Microchip Studio</span>
-        </div>
+            <div class="about-content">
+                <div class="about-text reveal-left">
+                    <p>
+                        I'm Abdullah Saad — an Embedded Systems enthusiast and Frontend Developer who turns hardware into sleek, interactive experiences. From gesture-controlled cars to admin dashboards, I merge logic with design.
+                    </p>
+                    <p>
+                        I build real-world tech — smart, efficient, and beautifully designed. My journey spans Arduino projects, full-stack development, and creating digital solutions that combine powerful functionality with elegant interfaces.
+                    </p>
+                </div>
+
+                <div class="skills-container reveal-right">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-box">
+                            <i class="fas fa-microchip"></i>
+                            <h4>Arduino</h4>
+                        </div>
+                        <div class="skill-box">
+                            <i class="fas fa-code"></i>
+                            <h4>Embedded C</h4>
+                        </div>
+                        <div class="skill-box">
+                            <i class="fab fa-html5"></i>
+                            <h4>HTML</h4>
+                        </div>
+                        <div class="skill-box">
+                            <i class="fab fa-css3-alt"></i>
+                            <h4>CSS</h4>
+                        </div>
+                        <div class="skill-box">
+                            <i class="fab fa-js"></i>
+                            <h4>JavaScript</h4>
+                        </div>
+                        <div class="skill-box">
+                            <i class="fab fa-java"></i>
+                            <h4>Java</h4>
+                        </div>
+                        <div class="skill-box">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>Flutter</h4>
+                        </div>
+                        <div class="skill-box">
+                            <i class="fab fa-wordpress"></i>
+                            <h4>WordPress</h4>
+                        </div>
+                        <div class="skill-box">
+                            <i class="fab fa-git-alt"></i>
+                            <h4>Git</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
-          </div>
-       </section>
-
-       
-
-      <!-- -------------- PROJECT BOX ---------------- -->
-<section id="projects" style="padding: 60px 20px; background: #f8f9fa;">
-  <div style="text-align: center; margin-bottom: 40px;">
-    <h1 style="font-size: 2.5rem; color: #007bff;">Embedded & Software Projects</h1>
-    <p style="font-size: 1.1rem; color: #444;">A showcase of the embedded systems and software applications I've developed or contributed to:</p>
-  </div>
-
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1200px; margin: auto;">
-
-    <!-- Project 1 -->
-    <div style="background: white; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
-      <img src="assets/images/scms.png" alt="Scholarship Management System" style="width: 100%; border-radius: 8px;">
-      <h3 style="margin-top: 15px;"> GUI-Based Scholarship Management System</h3>
-      <p>Desktop software for managing student scholarship applications with automated shortlisting and real-time application tracking.</p>
-      <ul>
-        <li>Student registration and login portal</li>
-        <li>Admin dashboard with approval tools</li>
-        <li>Eligibility check based on GPA/criteria</li>
-      </ul>
-      <p><strong>Tech Used:</strong> Java, Swing/JavaFX, MySQL</p>
-      
-    </div>
-
-    <!-- Project 2 -->
-    <div style="background: white; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
-      <img src="assets/images/sms.jpg" alt="School Management System" style="width: 100%; border-radius: 8px;">
-      <h3 style="margin-top: 15px;">Console-Based School Management System</h3>
-      <p>A command-line C++ application to manage school records using file handling and OOP — with plans to upgrade to GUI.</p>
-      <ul>
-        <li>Student record management (Add/Edit/Delete)</li>
-        <li>Sorting & searching using custom algorithms</li>
-        <li>Persistent storage using text files</li>
-      </ul>
-      <p><strong>Tech Used:</strong> C++, File I/O, OOP</p>
-     
-    </div>
-
-    <!-- Project 3 -->
-    <div style="background: white; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
-      <img src="assets/images/rc.jpg" alt="Gesture Controlled Car" style="width: 100%; border-radius: 8px;">
-      <h3 style="margin-top: 15px;">Arduino-Based Hand Gesture Controlled Car</h3>
-      <p>Gesture-driven wireless car using an accelerometer and RF modules — developed for Microprocessor & Interfacing final project.</p>
-      <ul>
-        <li>Hand motion detection using ADXL345</li>
-        <li>Wireless RF transmission using nRF24L01</li>
-        <li>Motor control with Arduino UNO and L298N</li>
-      </ul>
-      <p><strong>Tech Used:</strong> Arduino UNO, Embedded C, ADXL345, nRF24L01</p>
-     
-    </div>
-
-    <!-- Project 4 -->
-    <div style="background: white; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
-      <img src="assets/images/bc.png" alt="4-bit Binary Counter" style="width: 100%; border-radius: 8px;">
-      <h3 style="margin-top: 15px;">4-Bit Binary Counter Using D Flip-Flops</h3>
-      <p>A digital circuit simulated in Logisim that counts from 0–15 using clock-driven D flip-flops, suitable for logic design practice.</p>
-      <ul>
-        <li>Edge-triggered flip-flop arrangement</li>
-        <li>Synchronous counting from 0000 to 1111</li>
-        <li>Reset and enable logic included</li>
-      </ul>
-      <p><strong>Tech Used:</strong> Logisim, Digital Logic, Flip-Flops</p>
-     
-    </div>
-
-    <!-- Project 5 -->
-    <div style="background: white; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
-      <img src="assets/images/mm.jpg" alt="Analog Multimeter" style="width: 100%; border-radius: 8px;">
-      <h3 style="margin-top: 15px;">Analog Multimeter Circuit</h3>
-      <p>Custom-built analog multimeter circuit using an ammeter and passive components to measure voltage and current ranges.</p>
-      <ul>
-        <li>Multiple measurement ranges (DCV, DCA)</li>
-        <li>Shunt resistor and series resistance calculation</li>
-        <li>Calibrated manually using test voltage source</li>
-      </ul>
-      <p><strong>Tech Used:</strong> Analog Circuit Design, Ammeter, Passive Components</p>
-      
-    </div>
-
-  </div>
-</section>
-
-
-  <!-- Call to Action -->
-  <div style="text-align: center; margin-top: 40px;">
-    <button style="padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 6px; font-size: 1rem;">View More Projects</button>
-    <p style="margin-top: 10px; font-style: italic;">Want simulation files or videos? Just reach out!</p>
-  </div>
-</section>
-
-     <section class="section" id="contact">
-  <div class="top-header">
-    <h1>Get in touch</h1>
-    <span>Do you have a project in your mind, contact me here</span>
-  </div>
-  <div class="row">
-    <div class="col">
-      <div class="contact-info">
-        <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-        <p><i class="uil uil-envelope"></i> mabdullahsaadofficial@gmail.com</p>
-        <p><i class="uil uil-phone"></i> Tel: +92 3197842864</p>
-      </div>
-    </div>
-    <div class="col">
-      <form 
-        id="contactForm"
-        action="https://formsubmit.co/mabdullahsaadofficial@gmail.com" 
-        method="POST" 
-        class="form-control"
-      >
-        <!-- Hidden inputs -->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
-        
-        <!-- Input fields -->
-        <div class="form-inputs">
-          <input type="text" name="name" class="input-field" placeholder="Your Name" required>
-          <input type="email" name="email" class="input-field" placeholder="Your Email" required>
         </div>
-        <div class="text-area">
-          <textarea name="message" placeholder="Your Message" required></textarea>
-        </div>
-        <div class="form-button">
-          <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
-        </div>
-      </form>
-    </div>
-  </div>
-</section>
+    </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header reveal-fade">
+                <h2 class="section-title">Embedded & Software Projects</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">A showcase of the embedded systems and software applications I've developed or contributed to</p>
+            </div>
 
-    <!-- --------------- FOOTER --------------- -->
-    <footer>
-        <div class="top-footer">
-            <p>Abdullah Saad .</p>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card reveal-scale">
+                    <div class="project-image">
+                        <img src="assets/images/scms.png" alt="Scholarship Management System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/abdullacaad" class="project-link" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>GUI-Based Scholarship Management System</h3>
+                        <p>Desktop software for managing student scholarship applications with automated shortlisting and real-time application tracking.</p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check"></i> Student registration and login portal</li>
+                            <li><i class="fas fa-check"></i> Admin dashboard with approval tools</li>
+                            <li><i class="fas fa-check"></i> Eligibility check based on GPA/criteria</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Swing/JavaFX</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal-scale">
+                    <div class="project-image">
+                        <img src="assets/images/sms.jpg" alt="School Management System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/abdullacaad" class="project-link" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Console-Based School Management System</h3>
+                        <p>A command-line C++ application to manage school records using file handling and OOP — with plans to upgrade to GUI.</p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check"></i> Student record management (Add/Edit/Delete)</li>
+                            <li><i class="fas fa-check"></i> Sorting & searching using custom algorithms</li>
+                            <li><i class="fas fa-check"></i> Persistent storage using text files</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">File I/O</span>
+                            <span class="tech-tag">OOP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal-scale">
+                    <div class="project-image">
+                        <img src="assets/images/rc.jpg" alt="Gesture Controlled Car">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/abdullacaad" class="project-link" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Arduino-Based Hand Gesture Controlled Car</h3>
+                        <p>Gesture-driven wireless car using an accelerometer and RF modules — developed for Microprocessor & Interfacing final project.</p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check"></i> Hand motion detection using ADXL345</li>
+                            <li><i class="fas fa-check"></i> Wireless RF transmission using nRF24L01</li>
+                            <li><i class="fas fa-check"></i> Motor control with Arduino UNO and L298N</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">Arduino UNO</span>
+                            <span class="tech-tag">Embedded C</span>
+                            <span class="tech-tag">ADXL345</span>
+                            <span class="tech-tag">nRF24L01</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card reveal-scale">
+                    <div class="project-image">
+                        <img src="assets/images/bc.png" alt="4-bit Binary Counter">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/abdullacaad" class="project-link" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>4-Bit Binary Counter Using D Flip-Flops</h3>
+                        <p>A digital circuit simulated in Logisim that counts from 0–15 using clock-driven D flip-flops, suitable for logic design practice.</p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check"></i> Edge-triggered flip-flop arrangement</li>
+                            <li><i class="fas fa-check"></i> Synchronous counting from 0000 to 1111</li>
+                            <li><i class="fas fa-check"></i> Reset and enable logic included</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">Logisim</span>
+                            <span class="tech-tag">Digital Logic</span>
+                            <span class="tech-tag">Flip-Flops</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card reveal-scale">
+                    <div class="project-image">
+                        <img src="assets/images/mm.jpg" alt="Analog Multimeter">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/abdullacaad" class="project-link" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Analog Multimeter Circuit</h3>
+                        <p>Custom-built analog multimeter circuit using an ammeter and passive components to measure voltage and current ranges.</p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check"></i> Multiple measurement ranges (DCV, DCA)</li>
+                            <li><i class="fas fa-check"></i> Shunt resistor and series resistance calculation</li>
+                            <li><i class="fas fa-check"></i> Calibrated manually using test voltage source</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">Analog Circuit Design</span>
+                            <span class="tech-tag">Ammeter</span>
+                            <span class="tech-tag">Passive Components</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="middle-footer">
-            <ul class="footer-menu">
-                <li class="footer_menu_list">
-                    <a href="#home">Home</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#about">About</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#projects">Projects</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        <div class="footer-social-icons">
-  <a href="https://instagram.com/abdullacaad" target="_blank" class="icon">
-    <i class="uil uil-instagram"></i>
-  </a>
-  <a href="https://linkedin.com/in/abdullacaad" target="_blank" class="icon">
-    <i class="uil uil-linkedin-alt"></i>
-  </a>
-  <a href="https://dribbble.com/yourprofile" target="_blank" class="icon">
-    <i class="uil uil-dribbble"></i>
-  </a>
-  <a href="https://github.com/abdullacaad" target="_blank" class="icon">
-    <i class="uil uil-github-alt"></i>
-  </a>
-</div>
-        <div class="bottom-footer">
-            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Abdullah Saad</a> - All rights reserved</p>
+    </section>
+
+    <!-- Freelancing Section -->
+    <section id="freelancing" class="freelancing-section">
+        <div class="container">
+            <div class="section-header reveal-fade">
+                <h2 class="section-title">Freelancing Services</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Professional academic and technical freelancing services</p>
+            </div>
+
+            <div class="freelancing-grid">
+
+                <!-- Service 1 -->
+                <div class="freelancing-card reveal-scale">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Computing Fundamentals</h3>
+                    <p>Help with programming assignments and computing fundamentals coursework. Solutions in C, C++, Java, Python with clear explanations and working code.</p>
+                    <div class="service-tags">
+                        <span>C/C++</span>
+                        <span>Java</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="freelancing-card reveal-scale">
+                    <div class="service-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h3>LaTeX Report Writing</h3>
+                    <p>Professional LaTeX document preparation for academic reports, technical papers, and thesis documentation. High-quality formatting with citations and mathematical equations.</p>
+                    <div class="service-tags">
+                        <span>LaTeX</span>
+                        <span>BibTeX</span>
+                        <span>Formatting</span>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="freelancing-card reveal-scale">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Machine Learning Assignments</h3>
+                    <p>Complete machine learning project solutions including classification, regression, clustering, and neural networks. Python with scikit-learn, TensorFlow, and PyTorch.</p>
+                    <div class="service-tags">
+                        <span>ML Algorithms</span>
+                        <span>Deep Learning</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="freelancing-card reveal-scale">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Final Year Project (FYP)</h3>
+                    <p>End-to-end FYP development with complete implementation, testing, and professional documentation. From project conception to final deployment with quality code.</p>
+                    <div class="service-tags">
+                        <span>Full Stack</span>
+                        <span>Implementation</span>
+                        <span>Documentation</span>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="freelancing-card reveal-scale">
+                    <div class="service-icon">
+                        <i class="fas fa-scroll"></i>
+                    </div>
+                    <h3>FYP Report & Thesis</h3>
+                    <p>Professional final year project reports and thesis writing. Complete documentation including research methodology, analysis, conclusions, and proper academic formatting.</p>
+                    <div class="service-tags">
+                        <span>Report Writing</span>
+                        <span>Thesis</span>
+                        <span>Academic Style</span>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="freelancing-card reveal-scale">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Arduino & Embedded Systems</h3>
+                    <p>Custom Arduino projects, microcontroller programming, sensor integration, and IoT solutions. Firmware development for embedded applications.</p>
+                    <div class="service-tags">
+                        <span>Arduino</span>
+                        <span>Embedded C</span>
+                        <span>IoT</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Thesis & Academic Work Section -->
+    <section id="thesis" class="academic-section">
+        <div class="container">
+            <div class="section-header reveal-fade">
+                <h2 class="section-title">Academic Portfolio</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Research, Projects & Academic Documentation</p>
+            </div>
+
+            <!-- Featured Thesis Card 1: Main Thesis -->
+            <div class="thesis-featured-card reveal-fade">
+                    <div class="thesis-featured-content">
+                        <div class="thesis-info">
+                            <div class="thesis-badge">
+                                <i class="fas fa-award"></i> Final Year Project
+                            </div>
+                            <h3 class="thesis-title">Embedded Systems & IoT Implementation</h3>
+                            <p class="thesis-subtitle">Gesture-Controlled Vehicle with Real-time Monitoring</p>
+                            
+                            <div class="thesis-details-grid">
+                                <div class="detail-box">
+                                    <h4><i class="fas fa-bullseye"></i> Problem</h4>
+                                    <p>Developing intuitive control systems for autonomous vehicles using gesture recognition and embedded systems integration.</p>
+                                </div>
+                                <div class="detail-box">
+                                    <h4><i class="fas fa-cogs"></i> Methodology</h4>
+                                    <p>Arduino-based prototype with sensor fusion, real-time processing, and wireless communication protocols.</p>
+                                </div>
+                                <div class="detail-box">
+                                    <h4><i class="fas fa-microchip"></i> Technologies</h4>
+                                    <p>Arduino, C/C++, Sensor Integration, IoT Protocols, Real-time Systems</p>
+                                </div>
+                                <div class="detail-box">
+                                    <h4><i class="fas fa-chart-line"></i> Outcome</h4>
+                                    <p>Successful implementation with 95% gesture recognition accuracy and real-time response capabilities.</p>
+                                </div>
+                            </div>
+
+                            <div class="thesis-actions">
+                                <button class="btn-academic btn-primary" data-pdf="report finale.pdf">
+                                    <i class="fas fa-eye"></i> View Full Thesis
+                                </button>
+                                <a href="assets/reports/report finale.pdf" download class="btn-academic btn-secondary">
+                                    <i class="fas fa-download"></i> Download PDF
+                                </a>
+                                <button class="btn-academic btn-tertiary" data-pdf="report finale.pdf">
+                                    <i class="fas fa-book-reader"></i> Read Abstract
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="thesis-preview">
+                            <div class="preview-badge">Research Document</div>
+                            <div class="pdf-preview-container">
+                                <iframe src="assets/reports/report finale.pdf#toolbar=0&page=1" class="pdf-preview"></iframe>
+                            </div>
+                            <div class="preview-info">
+                                <span><i class="fas fa-file-pdf"></i> report finale.pdf</span>
+                                <span><i class="fas fa-calendar"></i> 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Featured Card 2: Task Management System -->
+            <div class="thesis-featured-card reveal-fade">
+                <div class="thesis-featured-content">
+                    <div class="thesis-info">
+                        <div class="thesis-badge">
+                            <i class="fas fa-laptop-code"></i> Academic Project
+                        </div>
+                        <h3 class="thesis-title">Task Management System</h3>
+                        <p class="thesis-subtitle">Full-Stack Web Application Development</p>
+                        
+                        <div class="thesis-details-grid">
+                            <div class="detail-box">
+                                <h4><i class="fas fa-bullseye"></i> Problem</h4>
+                                <p>Building a comprehensive task management platform with user authentication, real-time updates, and collaborative features.</p>
+                            </div>
+                            <div class="detail-box">
+                                <h4><i class="fas fa-cogs"></i> Methodology</h4>
+                                <p>Agile development approach using MERN stack with RESTful API architecture and responsive design principles.</p>
+                            </div>
+                            <div class="detail-box">
+                                <h4><i class="fas fa-microchip"></i> Technologies</h4>
+                                <p>Node.js, React, MongoDB, Express.js, JWT Authentication, Socket.io</p>
+                            </div>
+                            <div class="detail-box">
+                                <h4><i class="fas fa-chart-line"></i> Outcome</h4>
+                                <p>Fully functional web application with advanced features including real-time collaboration and data visualization.</p>
+                            </div>
+                        </div>
+
+                        <div class="thesis-actions">
+                            <button class="btn-academic btn-primary" data-pdf="taskmanagementsystem.pdf">
+                                <i class="fas fa-eye"></i> View Full Report
+                            </button>
+                            <a href="assets/reports/taskmanagementsystem.pdf" download class="btn-academic btn-secondary">
+                                <i class="fas fa-download"></i> Download PDF
+                            </a>
+                            <button class="btn-academic btn-tertiary" data-pdf="taskmanagementsystem.pdf">
+                                <i class="fas fa-book-reader"></i> Read Abstract
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="thesis-preview">
+                        <div class="preview-badge">Project Report</div>
+                        <div class="pdf-preview-container">
+                            <iframe src="assets/reports/taskmanagementsystem.pdf#toolbar=0&page=1" class="pdf-preview"></iframe>
+                        </div>
+                        <div class="preview-info">
+                            <span><i class="fas fa-file-pdf"></i> taskmanagementsystem.pdf</span>
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Card 3: Data Analysis & ML -->
+            <div class="thesis-featured-card reveal-fade">
+                <div class="thesis-featured-content">
+                    <div class="thesis-info">
+                        <div class="thesis-badge">
+                            <i class="fas fa-brain"></i> Machine Learning Project
+                        </div>
+                        <h3 class="thesis-title">Applied Data Analysis & Machine Learning</h3>
+                        <p class="thesis-subtitle">Predictive Analytics and Model Development</p>
+                        
+                        <div class="thesis-details-grid">
+                            <div class="detail-box">
+                                <h4><i class="fas fa-bullseye"></i> Problem</h4>
+                                <p>Analyzing complex datasets to build predictive models for classification and regression tasks with high accuracy.</p>
+                            </div>
+                            <div class="detail-box">
+                                <h4><i class="fas fa-cogs"></i> Methodology</h4>
+                                <p>Data preprocessing, feature engineering, model selection, hyperparameter tuning, and comprehensive evaluation metrics.</p>
+                            </div>
+                            <div class="detail-box">
+                                <h4><i class="fas fa-microchip"></i> Technologies</h4>
+                                <p>Python, TensorFlow, Scikit-learn, Pandas, NumPy, Matplotlib, Jupyter Notebooks</p>
+                            </div>
+                            <div class="detail-box">
+                                <h4><i class="fas fa-chart-line"></i> Outcome</h4>
+                                <p>Achieved 92% accuracy on test dataset with optimized models and actionable insights from data analysis.</p>
+                            </div>
+                        </div>
+
+                        <div class="thesis-actions">
+                            <button class="btn-academic btn-primary" data-pdf="Applied Data Analysis and Machine Learning.pdf">
+                                <i class="fas fa-eye"></i> View Full Report
+                            </button>
+                            <a href="assets/reports/Applied Data Analysis and Machine Learning.pdf" download class="btn-academic btn-secondary">
+                                <i class="fas fa-download"></i> Download PDF
+                            </a>
+                            <button class="btn-academic btn-tertiary" data-pdf="Applied Data Analysis and Machine Learning.pdf">
+                                <i class="fas fa-book-reader"></i> Read Abstract
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="thesis-preview">
+                        <div class="preview-badge">Research Report</div>
+                        <div class="pdf-preview-container">
+                            <iframe src="assets/reports/Applied Data Analysis and Machine Learning.pdf#toolbar=0&page=1" class="pdf-preview"></iframe>
+                        </div>
+                        <div class="preview-info">
+                            <span><i class="fas fa-file-pdf"></i> Applied Data Analysis and Machine Learning.pdf</span>
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Card 4: Portfolio Design Proposal -->
+            <div class="thesis-featured-card reveal-fade">
+                <div class="thesis-featured-content">
+                    <div class="thesis-info">
+                        <div class="thesis-badge">
+                            <i class="fas fa-pencil-ruler"></i> Design Documentation
+                        </div>
+                        <h3 class="thesis-title">Portfolio Design Proposal</h3>
+                        <p class="thesis-subtitle">UI/UX Design and Development Planning</p>
+                        
+                        <div class="thesis-details-grid">
+                            <div class="detail-box">
+                                <h4><i class="fas fa-bullseye"></i> Problem</h4>
+                                <p>Creating a professional portfolio website that effectively showcases projects while maintaining excellent user experience.</p>
+                            </div>
+                            <div class="detail-box">
+                                <h4><i class="fas fa-cogs"></i> Methodology</h4>
+                                <p>User research, wireframing, prototyping, iterative design process, and usability testing with target audience.</p>
+                            </div>
+                            <div class="detail-box">
+                                <h4><i class="fas fa-microchip"></i> Technologies</h4>
+                                <p>Figma, Adobe XD, HTML/CSS, JavaScript, Responsive Design Principles</p>
+                            </div>
+                            <div class="detail-box">
+                                <h4><i class="fas fa-chart-line"></i> Outcome</h4>
+                                <p>Comprehensive design system with wireframes, mockups, and implementation guidelines for modern portfolio.</p>
+                            </div>
+                        </div>
+
+                        <div class="thesis-actions">
+                            <button class="btn-academic btn-primary" data-pdf="Portfolio Design Proposal.pdf">
+                                <i class="fas fa-eye"></i> View Full Proposal
+                            </button>
+                            <a href="assets/reports/Portfolio Design Proposal.pdf" download class="btn-academic btn-secondary">
+                                <i class="fas fa-download"></i> Download PDF
+                            </a>
+                            <button class="btn-academic btn-tertiary" data-pdf="Portfolio Design Proposal.pdf">
+                                <i class="fas fa-book-reader"></i> Read Abstract
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="thesis-preview">
+                        <div class="preview-badge">Design Document</div>
+                        <div class="pdf-preview-container">
+                            <iframe src="assets/reports/Portfolio Design Proposal.pdf#toolbar=0&page=1" class="pdf-preview"></iframe>
+                        </div>
+                        <div class="preview-info">
+                            <span><i class="fas fa-file-pdf"></i> Portfolio Design Proposal.pdf</span>
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Card 5: Portfolio Documentation -->
+            <div class="thesis-featured-card reveal-fade">
+                <div class="thesis-featured-content">
+                    <div class="thesis-info">
+                        <div class="thesis-badge">
+                            <i class="fas fa-file-code"></i> Technical Documentation
+                        </div>
+                        <h3 class="thesis-title">Portfolio Website Documentation</h3>
+                        <p class="thesis-subtitle">Complete Implementation Guide and Specifications</p>
+                        
+                        <div class="thesis-details-grid">
+                            <div class="detail-box">
+                                <h4><i class="fas fa-bullseye"></i> Problem</h4>
+                                <p>Documenting the complete development process, architecture decisions, and technical specifications for future reference.</p>
+                            </div>
+                            <div class="detail-box">
+                                <h4><i class="fas fa-cogs"></i> Methodology</h4>
+                                <p>Systematic documentation of codebase, architecture patterns, deployment process, and maintenance guidelines.</p>
+                            </div>
+                            <div class="detail-box">
+                                <h4><i class="fas fa-microchip"></i> Technologies</h4>
+                                <p>HTML5, CSS3, JavaScript ES6+, Git Version Control, Responsive Frameworks</p>
+                            </div>
+                            <div class="detail-box">
+                                <h4><i class="fas fa-chart-line"></i> Outcome</h4>
+                                <p>Comprehensive technical documentation covering all aspects of the portfolio website implementation and deployment.</p>
+                            </div>
+                        </div>
+
+                        <div class="thesis-actions">
+                            <button class="btn-academic btn-primary" data-pdf="Portfolio Website Documentation.pdf">
+                                <i class="fas fa-eye"></i> View Full Documentation
+                            </button>
+                            <a href="assets/reports/Portfolio Website Documentation.pdf" download class="btn-academic btn-secondary">
+                                <i class="fas fa-download"></i> Download PDF
+                            </a>
+                            <button class="btn-academic btn-tertiary" data-pdf="Portfolio Website Documentation.pdf">
+                                <i class="fas fa-book-reader"></i> Read Abstract
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="thesis-preview">
+                        <div class="preview-badge">Technical Document</div>
+                        <div class="pdf-preview-container">
+                            <iframe src="assets/reports/Portfolio Website Documentation.pdf#toolbar=0&page=1" class="pdf-preview"></iframe>
+                        </div>
+                        <div class="preview-info">
+                            <span><i class="fas fa-file-pdf"></i> Portfolio Website Documentation.pdf</span>
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Grid (keeping your existing services) -->
+            <div class="services-section" style="margin-top: 80px;">
+                <h3 style="text-align: center; font-size: 28px; color: var(--header-color); margin-bottom: 40px;">Academic Services Offered</h3>
+                <div class="thesis-grid">
+
+                <!-- Service 1 -->
+                <div class="thesis-card reveal-scale">
+                    <div class="thesis-header">
+                        <div class="thesis-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Computing Fundamentals</h3>
+                        <span class="thesis-year">Assignments</span>
+                    </div>
+                    <p class="thesis-description">
+                        Help with programming assignments, coding problems, data structures, and algorithms. I provide comprehensive solutions with detailed explanations for foundational computer science concepts.
+                    </p>
+                    <div class="thesis-details">
+                        <div class="detail-item">
+                            <i class="fas fa-code"></i>
+                            <span>C, C++, Java, Python</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-book"></i>
+                            <span>Data Structures</span>
+                        </div>
+                    </div>
+                    <a href="#" class="thesis-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="thesis-card reveal-scale">
+                    <div class="thesis-header">
+                        <div class="thesis-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>LaTeX Report Writing</h3>
+                        <span class="thesis-year">Professional</span>
+                    </div>
+                    <p class="thesis-description">
+                        Professional LaTeX document preparation for academic papers, reports, and technical documentation. High-quality formatting with cross-references, citations, and mathematical equations.
+                    </p>
+                    <div class="thesis-details">
+                        <div class="detail-item">
+                            <i class="fas fa-pen-fancy"></i>
+                            <span>LaTeX Typesetting</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-check"></i>
+                            <span>BibTeX References</span>
+                        </div>
+                    </div>
+                    <a href="#" class="thesis-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="thesis-card reveal-scale">
+                    <div class="thesis-header">
+                        <div class="thesis-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Machine Learning Assignments</h3>
+                        <span class="thesis-year">Advanced</span>
+                    </div>
+                    <p class="thesis-description">
+                        Expertise in machine learning projects including classification, regression, clustering, and neural networks. Python-based solutions using popular libraries like scikit-learn, TensorFlow, and PyTorch.
+                    </p>
+                    <div class="thesis-details">
+                        <div class="detail-item">
+                            <i class="fas fa-brain"></i>
+                            <span>ML Algorithms</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-robot"></i>
+                            <span>Deep Learning</span>
+                        </div>
+                    </div>
+                    <a href="#" class="thesis-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="thesis-card reveal-scale">
+                    <div class="thesis-header">
+                        <div class="thesis-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h3>Final Year Project (FYP)</h3>
+                        <span class="thesis-year">Complete Solution</span>
+                    </div>
+                    <p class="thesis-description">
+                        End-to-end FYP development including project conception, implementation, testing, and documentation. I guide through the entire process with professional code quality and comprehensive reporting.
+                    </p>
+                    <div class="thesis-details">
+                        <div class="detail-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>Full Implementation</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-book-open"></i>
+                            <span>Documentation</span>
+                        </div>
+                    </div>
+                    <a href="#" class="thesis-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="thesis-card reveal-scale">
+                    <div class="thesis-header">
+                        <div class="thesis-icon">
+                            <i class="fas fa-scroll"></i>
+                        </div>
+                        <h3>Thesis & Report Writing</h3>
+                        <span class="thesis-year">Professional</span>
+                    </div>
+                    <p class="thesis-description">
+                        Expert thesis writing including research methodology, literature review, analysis, and conclusions. Professional formatting in LaTeX or Microsoft Word with proper citations and academic standards compliance.
+                    </p>
+                    <div class="thesis-details">
+                        <div class="detail-item">
+                            <i class="fas fa-microscope"></i>
+                            <span>Research Support</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-quote-left"></i>
+                            <span>Citation Management</span>
+                        </div>
+                    </div>
+                    <a href="#" class="thesis-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+            </div>
+        </div>
+
+        <!-- PDF Modal Viewer -->
+        <div id="pdfModal" class="pdf-modal">
+            <div class="pdf-modal-content">
+                <div class="pdf-modal-header">
+                    <h3 id="pdfModalTitle">Document Viewer</h3>
+                    <button class="pdf-modal-close" id="closePdfModal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="pdf-modal-body">
+                    <iframe id="pdfModalFrame" src=""></iframe>
+                </div>
+                <div class="pdf-modal-footer">
+                    <span id="pdfPageInfo"></span>
+                    <a id="pdfDownloadBtn" href="" download class="btn-academic btn-secondary">
+                        <i class="fas fa-download"></i> Download PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header reveal-fade">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Do you have a project in your mind, contact me here</p>
+            </div>
+
+            <div class="contact-content">
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper reveal-left">
+                    <form class="contact-form" id="contactForm" action="https://formsubmit.co/mabdullahsaadofficial@gmail.com" method="POST">
+                        <!-- Hidden inputs -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
+                        
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary pulse-btn">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info reveal-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>mabdullahsaadofficial@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+92 3197842864</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Pakistan</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <h4>Follow Me</h4>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/abdullacaad" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/abdullacaad" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            <a href="https://instagram.com/abdullacaad" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                            <a href="https://facebook.com/abdullacaad" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Abdullah Saad. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/abdullacaad" class="footer-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/abdullacaad" class="footer-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/abdullacaad" class="footer-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com/abdullacaad" class="footer-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
 
-    </div>
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
-
-
-
-    <!-- ----- TYPING JS Link ----- -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-       <!-- ----- SCROLL REVEAL JS Link----- -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- ----- MAIN JS ----- -->
+    <!-- Main JavaScript -->
     <script src="assets/js/main.js"></script>
+
 </body>
 </html>
