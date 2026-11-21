@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="380" viewBox="0 0 900 380" font-family="Segoe UI, Arial, sans-serif">
+<rect width="100%" height="100%" rx="16" fill="#0f172a"/>
+<text x="30" y="42" font-size="24" font-weight="700" fill="#f8fafc">Portfolio | Abdullah Saad</text>
+<text x="30" y="68" font-size="14" fill="#94a3b8">HTML5 · CSS3 · JavaScript ES6+ — embedded projects, freelancing, academic reports</text>
+<rect x="30" y="92" width="180" height="76" rx="12" fill="#2563eb"/>
+<text x="120" y="122" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">1 · VISIT</text>
+<text x="120" y="145" font-size="12" fill="#e2e8f0" text-anchor="middle">abdullacaad.github.io</text>
+<text x="120" y="162" font-size="12" fill="#e2e8f0" text-anchor="middle">/portfolio/</text>
+<rect x="250" y="92" width="180" height="76" rx="12" fill="#7c3aed"/>
+<text x="340" y="122" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">2 · PAGES SERVES</text>
+<text x="340" y="145" font-size="12" fill="#e2e8f0" text-anchor="middle">index.html + assets/css</text>
+<text x="340" y="162" font-size="12" fill="#e2e8f0" text-anchor="middle">+ assets/js + images</text>
+<rect x="470" y="92" width="180" height="76" rx="12" fill="#059669"/>
+<text x="560" y="122" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">3 · SECTIONS</text>
+<text x="560" y="145" font-size="12" fill="#e2e8f0" text-anchor="middle">Projects · Freelancing</text>
+<text x="560" y="162" font-size="12" fill="#e2e8f0" text-anchor="middle">Thesis · Testimonials</text>
+<rect x="690" y="92" width="180" height="76" rx="12" fill="#0891b2"/>
+<text x="780" y="122" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">4 · CONTACT</text>
+<text x="780" y="145" font-size="12" fill="#e2e8f0" text-anchor="middle">FormSubmit form</text>
+<text x="780" y="162" font-size="12" fill="#e2e8f0" text-anchor="middle">+ copy-email button</text>
+<rect x="30" y="208" width="400" height="76" rx="12" fill="#ea580c"/>
+<text x="230" y="238" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">REPORTS — in-page PDF viewer</text>
+<text x="230" y="261" font-size="12" fill="#e2e8f0" text-anchor="middle">assets/reports/ · 7 PDFs · modal + download</text>
+<rect x="470" y="208" width="400" height="76" rx="12" fill="#334155"/>
+<text x="470" y="238" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">FEATURES</text>
+<text x="470" y="261" font-size="12" fill="#e2e8f0" text-anchor="middle">theme toggle · search &amp; filters · scroll progress</text>
+<text x="30" y="330" font-size="13" fill="#94a3b8">Embedded Systems · Frontend Development · Freelancing · AI-assisted development</text>
+</svg>
